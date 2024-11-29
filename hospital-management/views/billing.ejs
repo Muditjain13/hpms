@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Billing</title>
+</head>
+<body>
+    <h1>Generate Bill</h1>
+    <form action="/billing/generate" method="POST">
+        <label>Patient ID:</label>
+        <input type="text" name="patientID" required>
+        
+        <label>Amount:</label>
+        <input type="number" name="amount" required>
+        
+        <label>Payment Method:</label>
+        <select name="paymentMethod">
+            <option value="Cash">Cash</option>
+            <option value="Card">Card</option>
+            <option value="Insurance">Insurance</option>
+        </select>
+        
+        <button type="submit">Generate Bill</button>
+    </form>
+</body>
+</html>
