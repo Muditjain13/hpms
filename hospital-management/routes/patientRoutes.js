@@ -13,6 +13,7 @@ router.post("/register", async (req, res) => {
         res.redirect("/patients/register?success=true");
     } catch (error) {
         res.redirect("/patients/register?error=true");
+        console.log(error.body)
     }
 });
 
